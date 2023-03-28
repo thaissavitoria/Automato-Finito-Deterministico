@@ -80,10 +80,10 @@ $L(M)=${ $w\in$ {0,1} $^*|$ w é a cadeia vazia ou w termina com 0(pares)}
 
 <div align="justify">
 
-Para desenvolver o problema, foram usadas strings para coletar o estado inicial ($q_1$), o estado ativo e a cadeia que se deseja analisar.
+Para desenvolver o problema, foram usadas strings para coletar o estado inicial ($q_1$), o estado ativo e a cadeia que se deseja analisar.<br>
 É especificado o alfabeto e a condição para pertencimento à linguagem. Pede-se o usuário a cadeia binária que se deseja testar e guarda-se.
-Então, por meio de um for que percorre cada caracter da string, e confere se ele é pertencente ao alfabeto. 
-Também, é passado como parâmetro na `função`, que recebe o estado ativo e esse caracter, que é o símbolo que ditará o próximo estado ativo. No momento inicial, o estado ativo é o inicial ($q_1$), e a cada loop do for ele se torna aquele o qual a função devolver.
+Então, por meio de um for que percorre cada caracter da string, e confere se ele é pertencente ao alfabeto. <br>
+Também, é passado como parâmetro na `função`, que recebe o estado ativo e esse caracter, que é o símbolo que ditará o próximo estado ativo. No momento inicial, o estado ativo é o inicial ($q_1$), e a cada loop do for ele se torna aquele o qual a função devolver.<br>
 Quando a execução do loop é encerrada, ou seja, quando a cadeia acaba, confere-se se o estado ativo é o estado final por meio de um if e retorna se a cadeia é aceita ou não. Além de mostrar também a transição de estados pela qual ela passou em cada iteração do loop.
 </div>
 
