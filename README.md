@@ -92,7 +92,7 @@ Quando a execução do loop é encerrada, ou seja, quando a cadeia acaba, confer
 
 <div align="center">
 <img src=imgs/errada.png><p></p>
-Figura 2: Cadeia digitada errada e cadeia rejeitada.
+Figura 3: Cadeia digitada errada e cadeia rejeitada.
 </div>
 </br>
 
@@ -100,7 +100,7 @@ Figura 2: Cadeia digitada errada e cadeia rejeitada.
 
 <div align="center">
 <img src=imgs/certa.png><p></p>
-Figura 3: Cadeia aceita.
+Figura 4: Cadeia aceita.
 </div>
 </br>
   
