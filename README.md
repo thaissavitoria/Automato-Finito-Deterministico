@@ -24,17 +24,17 @@ Um autômato é uma abstração que representa matematicamente o que é possíve
 Um autômato finito é aquele que possui uma quantidade LIMITADA de memória, tem baixo custo de recursos e exigem um bom planejamento. Também são chamados de máquinas de estados finitos, e são usados em controladores simples e para o reconhecimento de padrão de dados. Normalmente são representados por um diagrama de estados (Figura 1).
 
 <div align="center">
-<img src=imgs/diagrama.png>
+<img src=imgs/diagrama.png><p></p>
 Figura 1: Diagrama de estados.
 </div>
-
-Já o autômato finito determinístico, é um 5-upla ($ Q, \Sigma, \delta, q_0, F $), onde:
+<p></p>
+Já o autômato finito determinístico, é um 5-upla ( $Q,\Sigma,\delta,q_0,F$ ), onde:
 
 - $Q$ = conjunto de estados finitos;
 - $\Sigma$ = alfabeto;
-- $ \delta: Q $ x $ \Sigma \rightarrow Q$ = função de transição;
+- $\delta: Q$ x $\Sigma \rightarrow Q$ = função de transição;
 - $q_0$ = estado inicial;
-- $ F \subseteq Q$ = conjunto de estados finais.
+- $F \subseteq Q$ = conjunto de estados finais.
 
 Nesse modelo, para cada símbolo do alfabeto existe exatamente um estado para qual o autômato pode transitar a partir do único estado ativo.
 
@@ -42,10 +42,10 @@ Nesse modelo, para cada símbolo do alfabeto existe exatamente um estado para qu
 ## Implementação
  O autômato escolhido para ser representado foi o com as seguintes características:
 
- - $Q = \left\{q1,q2 \right\} $;
-- $\Sigma = \left\{0,1 \right\}$;
+ - $Q=q1,q2$;
+- $\Sigma = 0,1$;
 - $q_1$ = estado inicial;
-- $ F = \left\{q1 \right\}$.
+- $F =q1$.
 
 A função deste autômato pode ser descrita pelo seguinte diagrama:
 
@@ -59,7 +59,7 @@ Ou seja:
 
 <div align="center">
 
-| $ \delta $ | 0 | 1 |                   
+| $\delta$ | 0 | 1 |                   
 | -----------| --| --|
 |  q1        |q1 | q2|
 |  q2        |q1 | q2|
@@ -67,9 +67,13 @@ Ou seja:
 </div>
 
 Logo, percebe-se que a linguagem deste autômato se da por:
+</br>
 
-$$ L(M)= \left\{w \in \left\{0,1\right\}^* | w\ é\ a\ cadeia\ vazia\ ou\ w\ termina\ com\ 0(pares) \right\}$$
+<div align="center">
 
+$L(M)=${ $w\in$ {0,1} $^*|$ w é a cadeia vazia ou w termina com 0(pares)}
+
+</div>
 
 #### O código
 
