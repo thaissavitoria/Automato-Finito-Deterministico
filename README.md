@@ -27,8 +27,9 @@ Um autômato finito é aquele que possui uma quantidade LIMITADA de memória, te
 <img src=imgs/diagrama.png><p></p>
 Figura 1: Diagrama de estados.
 </div>
-<p></p>
-Já o autômato finito determinístico, é um 5-upla ( $Q,\Sigma,\delta,q_0,F$ ), onde:
+<br>
+
+Já o autômato finito determinístico, é um 5-upla ($Q$, $\Sigma$, $\delta$, $q_0$, $F$), onde:
 
 - $Q$ = conjunto de estados finitos;
 - $\Sigma$ = alfabeto;
