@@ -49,6 +49,9 @@ int main() {
         }
     } while (!conf);
 
+    if (cadeia.size() == 0)
+        estado_ativo = estado_inicial;
+
     if (estado_ativo == "q1")
         cout << endl << "ACEITA" << endl;
     else
